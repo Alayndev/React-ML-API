@@ -48,6 +48,7 @@ class App extends React.Component<any, any> {
                 link={r.permalink}
                 stock={r.available_quantity}
                 sold={r.sold_quantity}
+                condition={r.condition}
               />
             ))}
           </div>

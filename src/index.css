@@ -113,9 +113,11 @@ body {
   font-weight: 700;
 }
 
-.result-item-condition {
-  margin-top: 4px;
-  font-size: 14px;
+.new {
+  color: green;
+}
+.used {
+  color: orange;
 }
 
 .result-item-sold-quantity {
