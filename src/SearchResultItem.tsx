@@ -10,7 +10,7 @@ class SearchResultItem extends React.Component<any, any> {
           <img src={this.props.img} alt="item" className="result-item-img" />
           <div className="result-item-subcontainer-content">
             <h4 className="result-item-title">Título: {this.props.title}</h4>
-            <p className={this.props.condition == "new" ? "new" : "used"}> {this.props.condition === "new" ? "Nuevo" : "Usado"} </p>
+            <p className={this.props.condition == "new" ? "new" : "used"}>{this.props.condition === "new" ? "Nuevo" : "Usado"}</p>
             <p className="result-item-sold-quantity">
               Vendidos: <span className="sold-quantity">{this.props.sold}</span>
             </p>
