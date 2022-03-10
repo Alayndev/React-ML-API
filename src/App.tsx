@@ -11,7 +11,7 @@ class App extends React.Component<any, any> {
   }
 
   render() {
-    const handleSearch = async (wordToSearch) => {
+    const handleSearch = async (wordToSearch: string) => {
       const res = await fetch(
         "https://api.mercadolibre.com/sites/MLA/search?q=" + wordToSearch
       );
