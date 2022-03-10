@@ -1,6 +1,16 @@
 import React from "react";
 
-class SearchResultItem extends React.Component<any, any> {
+type SearchResultItemProps = {
+  title: string;
+  price: number;
+  img: string;
+  link: string;
+  stock: number;
+  sold: number;
+  condition: string;
+};
+
+class SearchResultItem extends React.Component<SearchResultItemProps, any> {
   render() {
     console.log("render SearchResultItem");
 
@@ -10,7 +20,9 @@ class SearchResultItem extends React.Component<any, any> {
           <img src={this.props.img} alt="item" className="result-item-img" />
           <div className="result-item-subcontainer-content">
             <h4 className="result-item-title">Título: {this.props.title}</h4>
-            <p className={this.props.condition == "new" ? "new" : "used"}>{this.props.condition === "new" ? "Nuevo" : "Usado"}</p>
+            <p className={this.props.condition == "new" ? "new" : "used"}>
+              {this.props.condition === "new" ? "Nuevo" : "Usado"}
+            </p>
             <p className="result-item-sold-quantity">
               Vendidos: <span className="sold-quantity">{this.props.sold}</span>
             </p>

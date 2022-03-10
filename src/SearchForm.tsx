@@ -1,17 +1,20 @@
 import React from "react";
 
-class SearchForm extends React.Component<any, any> {
+type SearchFormProps = {
+  onSearch: Function;
+};
+
+class SearchForm extends React.Component<SearchFormProps, any> {
   render() {
     console.log("render SearchForm");
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      
+
       if (this.props.onSearch) {
         this.props.onSearch(e.target.search.value);
       }
     };
-    
 
     return (
       <>
