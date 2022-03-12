@@ -9,4 +9,4 @@ Buscador de ML con React: https://alayndev.github.io/React-ML-API/
 
 - Webpack
 
-- Typescript
+- TypeScript
